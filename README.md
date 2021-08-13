@@ -5,7 +5,13 @@ HL7 to S3 gateway is a lihtweight process, allowing to capture HL7v2 messages se
 HL7toS3Gateway envisioned to be deployed within secure network of cloud VPC of the organization, so unencrypted HL7 TCP traffic is never exposed to the public internet.
 
 ## Build
-```
+
+1. [Install Java 1.8 JDK](https://adoptopenjdk.net).
+2. [Install Maven](https://maven.apache.org/).
+3. Clone or download this repository.
+4. Run in the root folder:
+
+```java
 mvn assembly:assembly -DdescriptorId=jar-with-dependencies
 ```
 
